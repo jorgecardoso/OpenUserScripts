@@ -6,31 +6,31 @@
 // @author       jorgecardoso
 // @match        https://infordocente.uc.pt/nonio/pautas/gerePauta.do*
 // @grant        none
+// @updateURL https://openuserjs.org/meta/jorgecardoso/Pautas_UC_Smart_Paste.meta.js
 // ==/UserScript==
 
 (function() {
     'use strict';
+
     console.log("Pautas UC Smart Paste");
+
     document.querySelector("table.displaytable input").addEventListener("paste", function(evt){
-        console.log("paste");
-        console.log(evt.clipboardData);
-        console.log(evt.clipboardData.getData("text/plain"));
 
         var data = evt.clipboardData.getData("text/plain");
+
+        console.log("Pasted data: ");
+        console.log(data)
+
         var rawTable = data.split("\n");
         var dataTable = [];
         rawTable.forEach(function(row) {
-            console.log(row);
             var r = row.split("\t").map(function(s) {return s.trim();});
-            console.log(r);
             dataTable.push(r);
-
         });
         console.log(dataTable);
 
 
         function getStudentScore(studentNumber) {
-
             for (var i = 0; i < dataTable.length; i++) {
                 var row = dataTable[i];
                 for (var j = 0; j < row.length; j++) {
