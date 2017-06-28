@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Pautas UC Smart Paste
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Allows pasting "Pautas" directly on the Pautas page of the InforDocente system of the University of Coimbra. Just copy (Ctrl-C) a table from a spreadsheet file making sure that there is a column with the student number and a column with the grade. Then click on any input in the pauta webpage and Ctrl-V.
 // @author       jorgecardoso
 // @match        https://infordocente.uc.pt/nonio/pautas/gerePauta.do*
@@ -19,7 +19,7 @@
         var data = evt.clipboardData.getData("text/plain");
 
         console.log("Pasted data: ");
-        console.log(data)
+        console.log(data);
 
         var rawTable = data.split("\n");
         var dataTable = [];
@@ -44,20 +44,21 @@
             return undefined;
         }
 
-        $("table.displaytable tr").each(function() {
-            //console.log(this);
-            var $studentNumber = $(this).find("td:nth-child(2)");
+        document.querySelectorAll("table.displaytable tr").forEach(function(tableRow) {
+            console.log(tableRow);
+            var studentNumber = tableRow.querySelector("td:nth-child(2)");
             //console.log($studentNumber.text());
 
-            if ($studentNumber.length > 0 ) {
-                var $score =  $(this).find("input");
-                console.log($score);
-                var studentScore = getStudentScore($studentNumber.text());
+            if ( studentNumber ) {
+                var score =  tableRow.querySelector("input");
+                console.log(score);
+                var studentScore = getStudentScore(studentNumber.innerText);
+                console.log(studentScore);
                 if (studentScore) {
-                    $score.val(studentScore);
+                    score.value = studentScore;
                 }
 
-                $score.trigger("change");
+                score.dispatchEvent(new Event("change"));
 
             }
         });
