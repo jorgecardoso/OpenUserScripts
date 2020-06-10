@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Pautas UC Smart Paste
-// @namespace    http://tampermonkey.net/
+// @namespace    https://jorgecardoso.eu
 // @version      0.2
 // @description  Allows pasting "Pautas" directly on the Pautas page of the InforDocente system of the University of Coimbra. Just copy (Ctrl-C) a table from a spreadsheet file making sure that there is a column with the student number and a column with the grade (the grade column should be the last column). Then click on any input in the pauta webpage and Ctrl-V.
 // @author       jorgecardoso
