@@ -2,7 +2,7 @@
 // @name         Assignments UC Paste Comments
 // @namespace    https://jorgecardoso.eu
 // @version      0.1
-// @license      MIT
+// @license MIT
 // @description  Allows pasting Comments directly on the Assignments page of the InforDocente system of the University of Coimbra. Just copy (Ctrl-C) a table from a spreadsheet file making sure that there is a column with the student number and a column with the comments (the comments column should be the last column). Then open the assignment page and press Ctrl-V; a button will appear: click on it and wait for all comments to be inserted.
 // @author       jorgecardoso
 // @copyright    2020, Jorge C. S. Cardoso (https://jorgecardoso.eu)
