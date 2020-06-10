@@ -10,6 +10,7 @@
 // @match        https://infordocente.uc.pt/nonio/ensino/detalhesSubmissaoAluno.do*
 // @match        https://infordocente.uc.pt/nonio/ensino/adicionarAlterarApreciacao.do*
 // @grant        none
+// @updateURL https://openuserjs.org/meta/jorgecardoso/Assignments_UC_Paste_Comments.meta.js
 // ==/UserScript==
 
 (function() {
