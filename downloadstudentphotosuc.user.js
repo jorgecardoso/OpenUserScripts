@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         Download student photos from InforDocente
-// @namespace    http://tampermonkey.net/
+// @namespace    https://jorgecardoso.eu
 // @version      0.1
 // @description  try to take over the world!
-// @author       You
+// @author       jorgecardoso
 // @match        https://infordocente.uc.pt/nonio/alunos/listaAlunosTurma.do*
 // @grant        none
+// @license 	 MIT
 // ==/UserScript==
 
 (function() {
