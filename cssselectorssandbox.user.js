@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CSS Selectors Sandbox
 // @namespace    http://jorgecardoso.eu
-// @version      0.44
+// @version      0.45
 // @description  Shows a list of CSS selectors and allows you to test any selector on any site.
 // @author       jorgecardoso
 // @match        *://*/*
@@ -17,6 +17,9 @@
 // @grant        GM_unregisterMenuCommand
 // @grant        GM_log
 // @license 	 MIT
+// @updateURL https://openuserjs.org/meta/jorgecardoso/CSS_Selectors_Sandbox.meta.js
+// @downloadURL https://openuserjs.org/install/jorgecardoso/CSS_Selectors_Sandbox.user.js
+// @copyright 2022, jorgecardoso (https://openuserjs.org/users/jorgecardoso)
 // ==/UserScript==
 
 
