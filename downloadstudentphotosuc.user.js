@@ -7,6 +7,9 @@
 // @match        https://infordocente.uc.pt/nonio/alunos/listaAlunosTurma.do*
 // @grant        none
 // @license 	 MIT
+// @updateURL    https://openuserjs.org/meta/jorgecardoso/Download_student_photos_from_InforDocente.meta.js
+// @downloadURL  https://openuserjs.org/install/jorgecardoso/Download_student_photos_from_InforDocente.user.js
+// @copyright    2022, jorgecardoso (https://openuserjs.org/users/jorgecardoso)
 // ==/UserScript==
 
 (function() {
